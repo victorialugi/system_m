@@ -127,5 +127,18 @@ telegraf.autogen, так как ее в списке нет`
 
 ### Задание 9
 
-![Название скриншота](ссылка на скриншот)
+`Была выполнена настройка плагина сбора метрик Docker:
 
+Добавлен блок [[inputs.docker]] в файл telegraf/telegraf.conf
+Внесены изменения в docker-compose.yml (добавлены privileged: true и дополнительные volumes с :Z)
+Выполнен перезапуск стека командой ./sandbox up
+
+Возникшие сложности:
+Во время выполнения задания столкнулась с проблемами запуска Chronograf (permission denied на volume).
+Пересматривала видео с вебинара, но там таких проблем не было.
+Проблема связана с особенностями Docker volumes на Linux (SELinux-подобные механизмы, различия в пользователях внутри и снаружи контейнера).
+Несмотря на технические сложности, плагин docker успешно добавлен, Telegraf перезапущен, стек частично функционирует.`
+
+![9.png](https://github.com/victorialugi/system_m/blob/main/9.png)
+
+![9.1.png](https://github.com/victorialugi/system_m/blob/main/9.1.png)
