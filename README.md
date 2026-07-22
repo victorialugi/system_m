@@ -117,7 +117,11 @@ Zabbix`
 
 ### Задание 8
 
-![Название скриншота](ссылка на скриншот)
+`Data Explorer открыт. Выполнены запросы к метрикам CPU. Возможно, Telegraf ещё не успел собрать достаточное количество данных в базу 
+
+telegraf.autogen, так как ее в списке нет`
+
+![8.png](https://github.com/victorialugi/system_m/blob/main/8.png)
 
 ---
 
